@@ -1,30 +1,33 @@
-# oracletestcon-front
+# Test práctico
 
-> A Vue.js project
+## BD
 
-## Build Setup
+- Se adjunta un archivo `docker-compose.yml` para levantar un contenedor con `mysql:8` y un manager `Adminer`
+- El server de `BD` debe correr en el puerto `3309`  *(en caso de que no se ejecute este contenedor)*
+- Una vez levantado el server, ejecutar el script puesto en la carpeta `bd_script`
 
-``` bash
-# install dependencies
-npm install
+## Backend
 
-# serve with hot reload at localhost:8080
-npm run dev
+- Se encuentra en la carpeta `oracletestcon`
+- Dentro de la carpeta instalar los paquetes : `npm i`
+- Ejecutar el server: `npm run start:dev`
+- **Requiere haber levantado el server de `BD` previamente**
 
-# build for production with minification
-npm run build
+## Frontend
 
-# build for production and view the bundle analyzer report
-npm run build --report
+- Se encuentra en la carpeta `oracletestcon-front`
+- Dentro de la carpeta instalar los paquetes : `npm i`
+- Ejecutar el server: `npm run dev`
+- Verificar el endpoint indicado donde se está ejecuando el server y acceder por el browser
+- **Requiere haber levantado el servicio de `Backend` previamente**
 
-# run unit tests
-npm run unit
 
-# run e2e tests
-npm run e2e
+![imagen](https://user-images.githubusercontent.com/8870150/119026369-b4726580-b96a-11eb-9211-628496938e61.png)
 
-# run all tests
-npm test
-```
+![imagen](https://user-images.githubusercontent.com/8870150/119026399-bccaa080-b96a-11eb-9539-354223fb907a.png)
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+![imagen](https://user-images.githubusercontent.com/8870150/119026411-c2c08180-b96a-11eb-8ab1-d6d64f28b614.png)
+
+![imagen](https://user-images.githubusercontent.com/8870150/119026454-cd7b1680-b96a-11eb-8997-f3d0515e59ba.png)
+
+
